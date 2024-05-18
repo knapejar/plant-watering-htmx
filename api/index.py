@@ -21,7 +21,15 @@ class Plant(db.Model):
         }
 
 with app.app_context():
+    db.drop_all()
     db.create_all()
+    plant1 = Plant(name='Fiddle Leaf Fig', description='Likes to be watered once a week.', last_watered='2024-05-18 12:00:00')
+    plant2 = Plant(name='Peace Lily', description='Tolerates low light.', last_watered='2024-05-18 12:00:00')
+    plant3 = Plant(name='Basil', description='The most delicious herb.', last_watered='2024-05-18 12:00:00')
+    db.session.add(plant1)
+    db.session.add(plant2)
+    db.session.add(plant3)
+    db.session.commit()
 
 @app.route('/')
 def index():

@@ -4,6 +4,8 @@
 
 V této aplikaci jsem se pokusil implementovat jednoduchou CRUD aplikaci za pomocí HTMX a Flasku. Aplikace slouží k evidenci rostlin a zaznamenávání jejich zalévání (později napojit na zalévací IoT zařízení).
 
+Produkční prostředí aplikace je dostupné na adrese [plant-watering-htmx.vercel.app](https://plant-watering-htmx.vercel.app/).
+
 ## Funkce
 
 - **Přidání nové rostliny**

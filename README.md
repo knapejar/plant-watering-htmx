@@ -1,17 +1,20 @@
 # Plant Watering App
 
-Tato aplikace umožňuje správu rostlin včetně přidávání, úpravy, zalévání a mazání rostlin. Backend je postaven na Flasku a frontend využívá HTMX, Lordicon a Bootstrap 5 pro dynamickou a interaktivní user experience.
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/plant-watering-htmx?style=for-the-badge) ![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+
+V této aplikaci jsem se pokusil implementovat jednoduchou CRUD aplikaci za pomocí HTMX a Flasku. Aplikace slouží k evidenci rostlin a zaznamenávání jejich zalévání (později napojit na zalévací IoT zařízení).
 
 ## Funkce
 
-- **Přidání nové rostliny**: Přidejte nové rostliny pomocí jednoduchého formuláře.
-- **Úprava rostliny**: Aktualizujte jméno nebo popis rostliny přímo z přehledu rostlin.
-- **Zalévání rostliny**: Zaznamenejte poslední zalévání rostliny kliknutím na ikonu.
-- **Smazání rostliny**: Odstraňte rostliny ze seznamu jednoduchým kliknutím.
+- **Přidání nové rostliny**:
+- **Úprava rostliny**:
+- **Zalévání rostliny**:
+- **Smazání rostliny**:
 
 ## Použité technologie
 
 - **Flask**: Webový framework pro backendovou logiku a API.
+- **SQLAlchemy**: ORM pro práci s databází.
 - **SQLite**: Databáze pro ukládání dat o rostlinách.
 - **HTMX**: Knihovna pro přidávání interaktivních funkcí pomocí HTML atributů.
 - **Lordicon**: Animované ikony pro vizuální zpětnou vazbu.
@@ -50,8 +53,7 @@ Tato aplikace umožňuje správu rostlin včetně přidávání, úpravy, zalév
 2. Klikněte na tlačítko "Add Plant".
 
 ### Úprava rostliny
-1. Klikněte na jméno nebo popis rostliny, kterou chcete upravit.
-2. Změňte hodnoty a klikněte na tlačítko "Update Plant".
+1. Změňte hodnoty a klikněte na tlačítko "Update Plant".
 
 ### Zalévání rostliny
 1. Klikněte na ikonu zalévání vedle rostliny.
@@ -67,6 +69,11 @@ Tato aplikace umožňuje správu rostlin včetně přidávání, úpravy, zalév
   - `index.html`: Hlavní stránka aplikace s formulářem a seznamem rostlin.
   - `_plant.html`: Částečná šablona pro jednotlivé rostliny.
 
+## Licence
+
+Tento projekt je licencován pod MIT licencí.
+
 ## Autor
 
-Tento projekt vytvořil Jaroslav Knápek. Pokud máte jakékoliv dotazy nebo připomínky, neváhejte mě kontaktovat.
+- **Jaroslav Knápek** - [knapejar](https://github.com/knapejar)
+

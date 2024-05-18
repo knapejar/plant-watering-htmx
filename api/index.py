@@ -20,7 +20,8 @@ class Plant(db.Model):
             'last_watered': self.last_watered
         }
 
-db.create_all()
+with app.app_context():
+    db.create_all()
 
 @app.route('/')
 def index():

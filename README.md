@@ -6,10 +6,10 @@ V této aplikaci jsem se pokusil implementovat jednoduchou CRUD aplikaci za pomo
 
 ## Funkce
 
-- **Přidání nové rostliny**:
-- **Úprava rostliny**:
-- **Zalévání rostliny**:
-- **Smazání rostliny**:
+- **Přidání nové rostliny**
+- **Úprava rostliny**
+- **Zalévání rostliny**
+- **Smazání rostliny**
 
 ## Použité technologie
 

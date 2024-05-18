@@ -1,0 +1,28 @@
+<div class="col-4 mb-4" id="plant-{{ plant.id }}">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ plant.name }}</h5>
+            <p class="card-text">{{ plant.description }}</p>
+            <p class="card-text"><small class="text-muted">Last watered: {{ plant.last_watered }}</small></p>
+            <form hx-put="/plants/{{ plant.id }}" hx-target="#plant-{{ plant.id }}" hx-swap="outerHTML" class="mb-3">
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="name" value="{{ plant.name }}" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="description" value="{{ plant.description }}">
+                </div>
+                <button type="submit" class="btn btn-success">Update Plant</button>
+            </form>
+            <form hx-delete="/plants/{{ plant.id }}" hx-target="#plant-{{ plant.id }}" hx-swap="delete" class="d-inline-block">
+                <button type="button" class="btn btn-danger">
+                    <lord-icon src="https://cdn.lordicon.com/skkahier.json" trigger="hover" style="width:30px;height:30px"></lord-icon>
+                </button>
+            </form>
+            <form hx-post="/plants/{{ plant.id }}/water" hx-target="#plant-{{ plant.id }}" hx-swap="outerHTML" class="d-inline-block">
+                <button type="button" class="btn btn-info">
+                    <lord-icon src="https://cdn.lordicon.com/ogkflacg.json" trigger="hover" style="width:30px;height:30px"></lord-icon>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

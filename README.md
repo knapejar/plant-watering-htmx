@@ -1,28 +1,72 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fflask3&demo-title=Flask%203%20%2B%20Vercel&demo-description=Use%20Flask%203%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fflask3-python-template.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994156/random/flask.png)
+# Plant Watering App
 
-# Flask + Vercel
+Tato aplikace umožňuje správu rostlin včetně přidávání, úpravy, zalévání a mazání rostlin. Backend je postaven na Flasku a frontend využívá HTMX, Lordicon a Bootstrap 5 pro dynamickou a interaktivní user experience.
 
-This example shows how to use Flask 3 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
+## Funkce
 
-## Demo
+- **Přidání nové rostliny**: Přidejte nové rostliny pomocí jednoduchého formuláře.
+- **Úprava rostliny**: Aktualizujte jméno nebo popis rostliny přímo z přehledu rostlin.
+- **Zalévání rostliny**: Zaznamenejte poslední zalévání rostliny kliknutím na ikonu.
+- **Smazání rostliny**: Odstraňte rostliny ze seznamu jednoduchým kliknutím.
 
-https://flask-python-template.vercel.app/
+## Použité technologie
 
-## How it Works
+- **Flask**: Webový framework pro backendovou logiku a API.
+- **SQLite**: Databáze pro ukládání dat o rostlinách.
+- **HTMX**: Knihovna pro přidávání interaktivních funkcí pomocí HTML atributů.
+- **Lordicon**: Animované ikony pro vizuální zpětnou vazbu.
+- **Bootstrap 5**: Framework pro responsivní a moderní design.
 
-This example uses the Web Server Gateway Interface (WSGI) with Flask to enable handling requests on Vercel with Serverless Functions.
+## Instalace
 
-## Running Locally
+1. Klonujte tento repozitář:
+    ```bash
+    git clone https://github.com/vase_jmeno/plant-watering-app.git
+    cd plant-watering-app
+    ```
 
-```bash
-npm i -g vercel
-vercel dev
-```
+2. Vytvořte a aktivujte virtuální prostředí:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # Na Windows použijte `venv\Scripts\activate`
+    ```
 
-Your Flask application is now available at `http://localhost:3000`.
+3. Nainstalujte závislosti:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-## One-Click Deploy
+4. Spusťte aplikaci:
+    ```bash
+    python app.py
+    ```
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+5. Otevřete webový prohlížeč a přejděte na `http://127.0.0.1:5000`.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fflask3&demo-title=Flask%203%20%2B%20Vercel&demo-description=Use%20Flask%203%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fflask3-python-template.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994156/random/flask.png)
+## Použití
+
+### Přidání nové rostliny
+1. Vyplňte formulář v horní části stránky.
+2. Klikněte na tlačítko "Add Plant".
+
+### Úprava rostliny
+1. Klikněte na jméno nebo popis rostliny, kterou chcete upravit.
+2. Změňte hodnoty a klikněte na tlačítko "Update Plant".
+
+### Zalévání rostliny
+1. Klikněte na ikonu zalévání vedle rostliny.
+
+### Smazání rostliny
+1. Klikněte na ikonu koše vedle rostliny.
+
+## Soubory
+
+- **app.py**: Hlavní soubor aplikace Flask.
+- **templates/**: Složka obsahující HTML šablony.
+  - `base.html`: Základní šablona s importy pro Bootstrap, HTMX a Lordicon.
+  - `index.html`: Hlavní stránka aplikace s formulářem a seznamem rostlin.
+  - `_plant.html`: Částečná šablona pro jednotlivé rostliny.
+
+## Autor
+
+Tento projekt vytvořil Jaroslav Knápek. Pokud máte jakékoliv dotazy nebo připomínky, neváhejte mě kontaktovat.

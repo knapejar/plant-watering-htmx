@@ -31,7 +31,12 @@ V této aplikaci jsem se pokusil implementovat jednoduchou CRUD aplikaci za pomo
 2. Vytvořte a aktivujte virtuální prostředí:
     ```bash
     python -m venv venv
-    source venv/bin/activate  # Na Windows použijte `venv\Scripts\activate`
+    source venv/bin/activate
+    ```
+    Na Windows:
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate
     ```
 
 3. Nainstalujte závislosti:
@@ -39,7 +44,16 @@ V této aplikaci jsem se pokusil implementovat jednoduchou CRUD aplikaci za pomo
     pip install -r requirements.txt
     ```
 
-4. Spusťte aplikaci:
+4. Nastavte proměnné prostředí:
+    ```bash
+    export SQLALCHEMY_DATABASE_URI="sqlite:///plants.db"
+    ```
+    Na Windows:
+    ```bash
+    set SQLALCHEMY_DATABASE_URI="sqlite:///plants.db"
+    ```
+
+5. Spusťte aplikaci:
     ```bash
     python app.py
     ```

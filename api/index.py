@@ -28,6 +28,9 @@ def create_tables():
 def index():
     plants = Plant.query.all()
     return render_template('index.html', plants=plants)
+@app.route('/test')
+def test():
+    return render_template('test.html')
 
 @app.route('/plants', methods=['POST'])
 def create_plant():
@@ -58,7 +61,7 @@ def delete_plant(id):
     plant = Plant.query.get_or_404(id)
     db.session.delete(plant)
     db.session.commit()
-    return '', 204
+    return '', 201
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -14,13 +14,13 @@
                 <button type="submit" class="btn btn-success">Update Plant</button>
             </form>
             <form hx-delete="/plants/{{ plant.id }}" hx-target="#plant-{{ plant.id }}" hx-swap="delete" class="d-inline-block">
-                <button type="button" class="btn btn-danger">
-                    <lord-icon src="https://cdn.lordicon.com/skkahier.json" trigger="hover" style="width:30px;height:30px"></lord-icon>
+                <button type="submit" class="btn btn-danger">
+                    <lord-icon src="https://cdn.lordicon.com/skkahier.json" trigger="click"></lord-icon>
                 </button>
             </form>
             <form hx-post="/plants/{{ plant.id }}/water" hx-target="#plant-{{ plant.id }}" hx-swap="outerHTML" class="d-inline-block">
-                <button type="button" class="btn btn-info">
-                    <lord-icon src="https://cdn.lordicon.com/ogkflacg.json" trigger="hover" style="width:30px;height:30px"></lord-icon>
+                <button type="submit" class="btn btn-info">
+                    <lord-icon src="https://cdn.lordicon.com/ogkflacg.json" trigger="click"></lord-icon>
                 </button>
             </form>
         </div>

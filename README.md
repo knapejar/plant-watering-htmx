@@ -1,6 +1,6 @@
 # Plant Watering App
 
-![Vercel Deploy](https://deploy-badge.vercel.app/vercel/plant-watering-htmx?style=for-the-badge) ![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+[![Vercel Deploy](https://deploy-badge.vercel.app/vercel/plant-watering-htmx?style=for-the-badge)](https://plant-watering-htmx.vercel.app/) [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](https://github.com/knapejar/plant-watering-htmx/blob/main/LICENSE.md)
 
 V této aplikaci jsem se pokusil implementovat jednoduchou CRUD aplikaci za pomocí HTMX a Flasku. Aplikace slouží k evidenci rostlin a zaznamenávání jejich zalévání (později napojit na zalévací IoT zařízení).
 
